@@ -1,4 +1,4 @@
-### summaryQuestions
+## summaryQuestions
 #### DNA重复序列（Repeated DNA Sequences）
 * Q:Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. **
 * For example:
@@ -33,4 +33,20 @@ Return:
 		return answer;
 	}
 	returnAnswer(repeatess(ass)) //["AAAAACCCCC", "CCCCCAAAAA"]
+```
+#### 什么是闭包？代码执行结果
+```
+function fun(arr){
+	var i , len
+	for(var i = 0,len = arr.length ; i<len ;i ++ ){
+		(function(i){
+			setTimeout(function(){
+				console.log(i)
+			},i*1000)
+		})(i)
+	}
+}
+fun(new Array(5))
+输出结果：每一秒输出一个数
+0  1  2  3  4  5
 ```
